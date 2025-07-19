@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Gradient DIV</title>
+    <link rel="stylesheet" href="/assets/footer.css">
+    <!-- META -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="itsmarian">
+    <meta name="description" content="A code snippet made by itsmarian.">
+    <meta name="keywords" content="itsmarian, itsmarianmc, itsmarian.mc, Projekt City, ProjektCity, projects, web development, software development, coding, programming">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Code Snippets by itsmarian">
+    <meta property="og:description" content="A code snippet made by itsmarian.">
+    <meta property="og:image" content="http://itsmarianmc.github.io/projects/hydrotrack/favicon.png">
+    <meta property="og:url" content="http://projects.itsmarianmc.is-a.dev/">
+    <meta property="og:type" content="website">
+    <style>
+        body {
+            margin: 0px
+        }
+        .textfield {
+            margin: 0 auto;
+            max-width: 300px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .transparent-gradient {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+            max-width: 300px;
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: -200px;
+            position: relative;
+            /* 
+                If you want to change the height, make sure to adjust the margin-top accordingly.
+                Example: if height is 200px, then margin-top should be -200px
+            */;
+        }
+
+        p {
+            margin-block-start: 0.1em;
+            margin-block-end: 0.1em;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E9SPPVJFL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2E9SPPVJFL');
+    </script>
+</head>
+<body>
+    <div class="textfield">
+        <p>This code snippet demonstrates a transparent gradient effect on a DIV element.</p>
+        <p>It uses a linear gradient that transitions from transparent to white.</p>
+        <p>Adjust the colors and direction of the gradient as needed.</p>
+        <p>The gradient is placed on the bottom of the "textfield" DIV, creating a smooth transition effect and not hiding the content above it.</p>
+        <p>Feel free to modify the dimensions and colors to suit your design needs.</p>
+        <p>Code created by itsmarian</p>
+    </div>
+    <div class="transparent-gradient"></div>
+    <footer>
+        <div>
+            <a class="linkout nodecoration" href="https://itsmarian.is-a.dev/legal/privacy" target="_blank">Privacy Policy</a>
+            <a>•</a>
+            <a class="linkout nodecoration" href="https://itsmarian.is-a.dev/legal/terms" target="_blank">Terms of Use</a>
+        </div>
+        <div>
+            <a class="linkout nodecoration" id="settingsPannelOpener">Change Cookie Preferences</a>
+            <a>•</a>
+            <a class="linkout nodecoration" href="https://status.itsmarian.is-a.dev/">Service status</a>
+        </div>
+        <div>
+            <a>&copy; 2025 itsmarian.is-a.dev | All rights reserved!</a>
+            <br>
+            <a>Made with <span class="heart">&hearts;</span> by itsmarian in <span>GERMANY</span></a>
+        </div>
+    </footer>
+</body>
+</html>
