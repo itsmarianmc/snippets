@@ -90,8 +90,14 @@
 					"/tree/main/snippet": {
 						"id": "65e1",
 						"paths": {
+							"/dynamic-menu-selector": {
+								"id": "e55d"
+							},
 							"/fake-download-bar": {
 								"id": "beu7"
+							},
+							"/swipe-downloader": {
+								"id": "d566"
 							},
 							"/transparent-gradient": {
 								"id": "X9gQ"
@@ -102,7 +108,7 @@
 			}
 		}
 	},
-	"/snippets": {
+	"/snippet": {
 		"id": "s49d",
 		"paths": {
 			"/dynamic-menu-selector": {
@@ -110,6 +116,9 @@
 			},
 			"/fake-download-bar": {
 				"id": "k2o5"
+			},
+			"/swipe-downloader": {
+				"id": "lgo8"
 			},
 			"/transparent-gradient": {
 				"id": "0emr"
