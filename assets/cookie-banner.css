@@ -291,7 +291,7 @@
 
 .close-btn:hover {
 	background-color: transparent !important;
-	color: var(--text-primary);
+	color: var(--txt-2);
 }
 
 .settings-content {

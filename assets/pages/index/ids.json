@@ -87,19 +87,22 @@
 			"/snippets": {
 				"id": "s7ed",
 				"paths": {
-					"/tree/main/snippet": {
+					"/blob/main/snippet": {
 						"id": "65e1",
 						"paths": {
-							"/dynamic-menu-selector": {
+							"/dynamic-menu-selector.html": {
 								"id": "e55d"
 							},
-							"/fake-download-bar": {
+							"/fake-download-bar.html": {
 								"id": "beu7"
 							},
-							"/swipe-downloader": {
+							"/fake-reCaptcha.html": {
+								"id": "54s5"
+							},
+							"/swipe-downloader.html": {
 								"id": "d566"
 							},
-							"/transparent-gradient": {
+							"/transparent-gradient.html": {
 								"id": "X9gQ"
 							}
 						}
@@ -116,6 +119,9 @@
 			},
 			"/fake-download-bar": {
 				"id": "k2o5"
+			},
+			"/fake-reCaptcha": {
+				"id": "s21e"
 			},
 			"/swipe-downloader": {
 				"id": "lgo8"
