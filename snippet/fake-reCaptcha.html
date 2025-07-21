@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>z</title>
     <link href="https://fonts.cdnfonts.com/css/product-sans:wght@100" rel="stylesheet">
     <link rel="stylesheet" href="https://itsmarian-static.is-a.dev/fonts/font-awesome-6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://itsmarian-static.is-a.dev/global/variables.css">
@@ -32,6 +32,10 @@
             justify-content: center;
         }
 
+        * {
+            box-sizing: auto !important
+        }
+
         .g-recaptcha {
             background-color: #f9f9f9;
             width: 300px;
@@ -40,6 +44,7 @@
             margin: 0 auto;
             border: 1px solid lightgray;
             border-radius: 3px;
+            transition: transform 0.2s ease;
             transform: scale(2);
         }
 
@@ -61,7 +66,7 @@
             transition: border-radius 0.2s ease;
             border-radius: 10%;
             margin-left: 10px;
-            margin-top: 22px;
+            margin-top: 25px;
         }
 
         .g-checkbox:hover {
@@ -69,7 +74,7 @@
         }
 
         .g-loader {
-            animation: spin 1s linear infinite;
+            animation: spin 2s linear infinite;
             border: 5px solid #f9f9f9;
             border-left: 5px solid #4d90fe;
             border-radius: 50%;
@@ -85,9 +90,11 @@
 
         @keyframes spin {
             0% { transform: translate(-50%, -50%) rotate(0deg); }
-            40% { transform: translate(-50%, -50%) rotate(150deg); }
-            50% { transform: translate(-50%, -50%) rotate(190deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
+            10% { transform: translate(-50%, -50%) rotate(135deg); }
+            25% { transform: translate(-50%, -50%) rotate(245deg); }
+            60% { transform: translate(-50%, -50%) rotate(700deg); }
+            75% { transform: translate(-50%, -50%) rotate(810deg); }
+            100% { transform: translate(-50%, -50%) rotate(3turn); }
         }
 
         .g-text {
@@ -95,9 +102,9 @@
         }
 
         .g-inner-text {
-            height: 17.8;
-            margin-bottom: 28.1px;
-            margin-top: 28.1px;
+            height: 100%;
+            display: flex;
+            align-items: center;
             width: 185px;
         }
 
@@ -110,9 +117,8 @@
         .g-img {
             display: flex;
             flex-direction: column;
-            width: 62.5px;
-            height: 46.1px;
             padding-top: 10px;
+            width: 100%;
         }
 
         .g-inner-img {
@@ -126,16 +132,18 @@
             color: #555555;
             font-size: 9px;
             margin-top: 2.5px;
-            text-align: right;
-            width: 62.5px;
+            text-align: center;
+            padding-left: 12.5px;
+            padding-right: 2.5px;
+            width: 100%;
         }
 
         .rc-anchor-pt {
             font-size: 8px;
-            height: 8.8px;
-            margin-top: 5px;
+            margin-top: 2.5px;
             text-align: right;
-            width: 62.5px;
+            padding-right: 2.5px;
+            width: 100%;
         }
 
         .g-terms-pp-text {
@@ -161,6 +169,7 @@
             stroke-width: 4;
             stroke-dasharray: 48;
             stroke-dashoffset: 48;
+            transform: translate(-6px, -6px);
         }
 
         @keyframes draw-check {
@@ -170,6 +179,34 @@
             to {
                 stroke-dashoffset: 0;
             }
+        }
+
+        @media (max-width: 620px) {
+            .g-recaptcha {
+                transform: scale(1.75);
+            }
+            
+        }
+
+        @media (max-width: 540px) {
+            .g-recaptcha {
+                transform: scale(1.5);
+            }
+            
+        }
+
+        @media (max-width: 455px) {
+            .g-recaptcha {
+                transform: scale(1.25);
+            }
+            
+        }
+
+        @media (max-width: 390px) {
+            .g-recaptcha {
+                transform: scale(1);
+            }
+            
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -186,7 +223,7 @@
     <div class="g-recaptcha" id="g-recaptcha">
         <div class="g-checkbox-container">
             <div class="g-checkbox">
-                <svg id="checkmark" viewBox="0 0 52 52" width="24" height="24">
+                <svg id="checkmark" viewBox="0 0 52 52" width="35" height="35">
                     <path d="M10 28l12 12 20-24" />
                 </svg>
                 <div class="g-loader"></div>
@@ -203,11 +240,11 @@
                 <div class="g-img-text">
                     <a>reCAPTCHA</a>
                 </div>
-            </div>
             <div class="rc-anchor-pt">
                 <a class="g-terms-pp-text" href="https://www.google.com/intl/en/policies/privacy/">Privacy</a>
                 <a class="g-terms-pp-ph">-</a>
                 <a class="g-terms-pp-text" href="https://www.google.com/intl/en/policies/terms/">Terms</a>
+            </div>
             </div>
         </div>
     </div>
@@ -404,15 +441,13 @@
                     checkbox.style.backgroundColor = "#f9f9f9";
                     checkbox.style.marginLeft = "12px";
                     loader.style.display = "block";
-                    loader.style.width = checkbox.offsetWidth + "px";
-                    loader.style.height = checkbox.offsetHeight + "px";
                     checkbox.style.border = "0px"
 
                     setTimeout(function(){
                         document.getElementById('checkmark').style.display = "block";
                         loader.style.display = "none";
                         // You can set a custom action, like showing a success message, a button or redirecting
-                    }, 4500);
+                    }, 4475);
                 }, 250);
             }
         });
