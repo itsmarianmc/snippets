@@ -99,6 +99,9 @@
 							"/fake-reCaptcha.html": {
 								"id": "54s5"
 							},
+							"/read-to-agree.html": {
+								"id": "d4e7"
+							},
 							"/swipe-downloader.html": {
 								"id": "d566"
 							},
@@ -122,6 +125,9 @@
 			},
 			"/fake-reCaptcha": {
 				"id": "s21e"
+			},
+			"/read-to-agree": {
+				"id": "488e"
 			},
 			"/swipe-downloader": {
 				"id": "lgo8"
