@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="https://itsmarian-static.is-a.dev/logos/favicon.webp" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>404</title>
-    <link rel="stylesheet" href="https://itsmarian-static.is-a.dev/fonts/font-awesome-6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://itsmarian-static.is-a.dev/global/style.css">
-    <link rel="stylesheet" href="https://itsmarian-static.is-a.dev/global/404/styles.css">
-    <!-- META -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="itsmarian">
-    <meta name="description" content="404 - Not Found: The page you are looking for does not exist.">
-    <meta name="keywords" content="itsmarian, itsmarianmc, itsmarian.mc, DerVertragsmann, itsmarian developer, itsmarian projects, itsmarian website, itsmarian GitHub, itsmarian YouTube, itsmarian Twitch, itsmarian portfolio, itsmarian coding, itsmarian Minecraft, itsmarian Fortnite, itsmarian socials, itsmarian contact, itsmarian creator, itsmarian programming, itsmarian web developer, itsmarian apps, itsmarian online presence, itsmarianmc official, itsmarian personal brand">
-    <meta name="referrer" content="no-referrer">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="itsmarian">
-    <meta property="og:description" content="404 - Not Found: The page you are looking for does not exist.">
-    <meta property="og:image" content="https://itsmarian.is-a.dev/assets/logos/favicon-transparent.png">
-    <meta property="og:url" content="https://itsmarian.is-a.dev/">
-    <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/logos/favicon.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>404: This page could not be found</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E9SPPVJFL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2E9SPPVJFL');
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <main>
-        <div class="error-container">
-            <div class="img-container">
-                <img alt="The image presents a visual representation of the numerical sequence '404' rendered in white, positioned centrally above a segmented white chain. The chain exhibits a clear rupture at its approximate midpoint. The entire composition is set against a solid black background." class="error-img" draggable="false" fetchpriority="high" src="https://itsmarian-static.is-a.dev/global/404/404.png">
-            </div>
-            <div class="txt-container">
-                <div>
-                    <h1>Oops!</h1>
-                    <p class="error-message">The page you are looking for does not exist.</p>
-                </div>
-                <button class="btn btn-primary">
-                    <a href="/">Go back to home</a>
-                </button>
+<body class="bg-black text-white antialiased overflow-hidden">
+    <div class="flex flex-col items-center justify-center min-h-screen px-4 text-center overflow-hidden">
+        <div class="flex items-center overflow-hidden">
+            <h1 class="inline-block border-r border-white/30 pr-6 mr-5 text-2xl font-medium leading-[49px]">
+                404
+            </h1>
+            <div class="inline-block text-left overflow-hidden">
+                <h2 class="text-sm font-normal leading-[49px] m-0 p-0">
+                    This page could not be found.
+                </h2>
             </div>
         </div>
-    </main>
-    <footer>
-        <div>
-            <a class="linkout nodecoration" href="https://itsmarian.is-a.dev/legal/privacy" target="_blank">Privacy Policy</a>
-            <a>•</a>
-            <a class="linkout nodecoration" href="https://itsmarian.is-a.dev/legal/terms" target="_blank">Terms of Use</a>
-            <a>•</a>
-            <a class="linkout nodecoration" href="https://status.itsmarian.is-a.dev/">Service status</a>
+        <div class="mt-8 overflow-hidden">
+            <p class="text-gray-400 text-sm mb-2">
+                The page is currently being updated.
+            </p>
+            <p class="text-gray-400 text-sm">
+                In the meantime, feel free to stop by 
+                <a href="https://projektcity.com/?ref=itsmarian" target="_blank" class="text-gray-400 hover:underline transition-all">Projekt City</a>.
+            </p>
         </div>
-        <div>
-            <a>&copy; 2025 itsmarian.is-a.dev | All rights reserved!</a>
-            <br>
-            <a>Made with <span class="heart">&hearts;</span> by itsmarian in <span>GERMANY</span></a>
-        </div>
-    </footer>
-    <script src="https://itsmarian-static.is-a.dev/global/cursor.js"></script>
+    </div>
 </body>
 </html>
